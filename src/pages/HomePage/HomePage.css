@@ -1,0 +1,24 @@
+.home {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 80px;
+}
+
+.btn-block {
+    width: 780px;
+    margin : 0 auto;
+}
+
+.btn-block button {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 46px;
+    background: gold;
+    cursor: pointer;
+    font-size: 23px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}

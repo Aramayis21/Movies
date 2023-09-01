@@ -1,0 +1,15 @@
+.movies{
+    width: 345px;
+    border : 1px solid black;
+    border-radius: 16px;
+}
+
+.movies h5 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.movies img {
+    display: block;
+    margin : 0 auto;
+}

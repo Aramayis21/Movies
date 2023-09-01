@@ -1,0 +1,25 @@
+.imgBlock{
+    width: 800px;
+    margin: 0 auto;
+}
+.imgBlock img {
+    width: 100%;
+}
+
+.filmInfo{
+    display: flex;
+    gap : 35px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.filmInfoIMG img{
+    width: 350px;
+}
+.filmInfoDesc h2{
+    text-align: center;
+}
+.filmsPage{
+    width: 1140px;
+    margin:  0 auto;
+    
+}

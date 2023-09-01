@@ -1,0 +1,8 @@
+.searchBlock{
+    width: 350px;
+    height: 400px;
+    background: rgba(116, 106, 106, 0.332);
+    position: absolute;
+    left: -200px;
+    overflow: scroll  ;
+}
