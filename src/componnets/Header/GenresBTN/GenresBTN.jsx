@@ -1,21 +1,21 @@
 import React from 'react'
 import './GenresBTN.css'
 import { fetchGenresId } from '../../../store/slices/movieSlice'
-import { useDispatch,useSelector } from 'react-redux'
-const GenresBTN = ({genre}) => {
+import { useDispatch, useSelector } from 'react-redux'
 
-const dispatch = useDispatch()
-const {genresId,pageNumber} = useSelector((state) => state.moviesData)
+const GenresBTN = ({ genre }) => {
+  const dispatch = useDispatch()
+  const { genresId, pageNumber } = useSelector((state) => state.moviesData)
 
-const click = (genre) => {
-  if (genre === genresId) {return}
-  dispatch(fetchGenresId(genresId,pageNumber))
-  
-}
+  console.log(genre.id, genresId);
 
+  const click = () => {
+    if (genre.id === genresId) { return }
+    dispatch(fetchGenresId(genre.id, pageNumber))
+  }
 
   return (
-    <button onClick={() => click(genre.id)}>{genre.name}</button>
+    <button onClick={click}>{genre.name}</button>
   )
 }
 
